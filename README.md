@@ -4,4 +4,4 @@ Repositório com anotações e projetos criados durante o desafio [100 Days Of S
 
 - [Day 1 – variables, simple data types, and string interpolation](dia-01-simple-data-types.playground/Contents.swift)
 - [Day 2 – arrays, dictionaries, sets, and enums](dia-02-arrays-dictionaries-sets-enums.playground/Contents.swift)
-- [Day 3 – operators and conditions](dia-03-operators%and%conditions.playground/Contents.swift)
+- [Day 3 – operators and conditions](https://github.com/gsillis/100-days-of-swift/blob/main/dia-03-operators%20and%20conditions.playground/Contents.swift)
