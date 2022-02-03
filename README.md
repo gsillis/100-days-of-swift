@@ -2,4 +2,4 @@
 
 Repositório com anotações e projetos criados durante o desafio [100 Days Of Swift](https://www.hackingwithswift.com/100)
 
-- [anotações](anotacoes.md)
+- [Day 1 – variables, simple data types, and string interpolation](dia-01-simple-data-types.playground/Contents.swift)
