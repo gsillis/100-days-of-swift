@@ -11,5 +11,5 @@ Repositório com anotações e projetos criados durante o desafio [100 Days Of S
 - [Day 6 - closures part one](Days-1-12-introduction-to-swift/day-06-closures-part-one.playground/Contents.swift)
 - [Day 7 - closures part two](Days-1-12-introduction-to-swift/day-07-closures-part-two.playground/Contents.swift)
 - [Day 8 - structs, properties and methods](Days-1-12-introduction-to-swift/day-08-structs-properties-methods.playground/Contents.swift)
-- [Day 9 - access control, static properties and laziness](Days-1-12-introduction-to-swift/ay-09-access-control-static-properties-laziness.playground/Contents.swift)
+- [Day 9 - access control, static properties and laziness](Days-1-12-introduction-to-swift/day-09-access-control-static-properties-laziness.playground/Contents.swift)
 - [Day 10 - classes](Days-1-12-introduction-to-swift/day-10-classes.playground/Contents.swift)
