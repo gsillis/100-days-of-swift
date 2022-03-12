@@ -7,14 +7,14 @@
 
 import UIKit
 
-protocol CustomCellTableViewCellProtocol {
+protocol StormTableViewCellProtocol {
     func configureImage(with image: String)
 }
 
-final class CustomCellTableViewCell: UITableViewCell {
+final class StormTableViewCell: UITableViewCell {
     
     static var identifier: String {
-        return String(describing: CustomCellTableViewCell.self)
+        return String(describing: StormTableViewCell.self)
     }
     
     private lazy var customImage: UIImageView = {
@@ -33,12 +33,13 @@ final class CustomCellTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     private func configureCell() {
         addSubview(customImage)
         backgroundColor = .white
+        selectionStyle = .none
     }
-
+    
     private func configureConstraints() {
         NSLayoutConstraint.activate([
             customImage.topAnchor.constraint(equalTo: self.topAnchor, constant: -5),
@@ -49,7 +50,7 @@ final class CustomCellTableViewCell: UITableViewCell {
     }
 }
 
-extension CustomCellTableViewCell: CustomCellTableViewCellProtocol {
+extension StormTableViewCell: StormTableViewCellProtocol {
     func configureImage(with image: String) {
         customImage.image = UIImage(named: image)
     }

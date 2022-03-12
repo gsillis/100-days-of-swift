@@ -7,17 +7,17 @@
 
 import UIKit
 
-protocol TableViewProtocol {
-    func tableViewDelegate(delegate: UITableViewDelegate, dataSource: UITableViewDataSource)
+protocol StormTableViewProtocol {
+    func tableView(delegate: UITableViewDelegate, dataSource: UITableViewDataSource)
 }
 
-final class TableView: UIView {
+final class StormTableView: UIView {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .white
-        tableView.register(CustomCellTableViewCell.self, forCellReuseIdentifier: CustomCellTableViewCell.identifier)
+        tableView.register(StormTableViewCell.self, forCellReuseIdentifier: StormTableViewCell.identifier)
         return tableView
     }()
     
@@ -46,8 +46,8 @@ final class TableView: UIView {
     }
 }
 
-extension TableView: TableViewProtocol {
-    func tableViewDelegate(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+extension StormTableView: StormTableViewProtocol {
+    func tableView(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         tableView.delegate = delegate
         tableView.dataSource = dataSource
     }
