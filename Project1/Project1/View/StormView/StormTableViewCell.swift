@@ -36,7 +36,7 @@ final class StormTableViewCell: UITableViewCell {
     
     private func configureCell() {
         addSubview(customImage)
-        backgroundColor = .white
+        backgroundColor = .black
         selectionStyle = .none
     }
     

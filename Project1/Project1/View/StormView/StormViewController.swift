@@ -31,7 +31,12 @@ class StormViewController: UIViewController {
         super.viewDidLoad()
         viewInstance?.tableView(delegate: self, dataSource: self)
         viewModel?.viewDidLoad()
+        configureNavBar()
+    }
+    
+    private func configureNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.backButtonTitle = ""
         title = "Storm viewer"
     }
 }
@@ -51,6 +56,11 @@ extension StormViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = DetailStormViewController(image: viewModel?.images[indexPath.row] ?? "")
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

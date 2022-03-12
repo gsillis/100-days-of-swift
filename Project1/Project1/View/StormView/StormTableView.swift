@@ -16,7 +16,7 @@ final class StormTableView: UIView {
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .black
         tableView.register(StormTableViewCell.self, forCellReuseIdentifier: StormTableViewCell.identifier)
         return tableView
     }()
@@ -32,7 +32,7 @@ final class StormTableView: UIView {
     }
     
     private func configureSubview() {
-        backgroundColor = .white
+        backgroundColor = .black
         addSubview(tableView)
     }
     
@@ -40,8 +40,8 @@ final class StormTableView: UIView {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
             tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: 10),
-            tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16)
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)
         ])
     }
 }

@@ -29,6 +29,8 @@
 		C59E1F0C27DD3A9900736459 /* nssl0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C59E1F0227DD3A9900736459 /* nssl0051.jpg */; };
 		C59E1F0D27DD3A9900736459 /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C59E1F0327DD3A9900736459 /* nssl0033.jpg */; };
 		C59E1F0E27DD3A9900736459 /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C59E1F0427DD3A9900736459 /* nssl0091.jpg */; };
+		C59E1F1327DD41CE00736459 /* DetailStormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59E1F1227DD41CE00736459 /* DetailStormView.swift */; };
+		C59E1F1527DD433A00736459 /* DetailStormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59E1F1427DD433A00736459 /* DetailStormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		C59E1F0227DD3A9900736459 /* nssl0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0051.jpg; sourceTree = "<group>"; };
 		C59E1F0327DD3A9900736459 /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		C59E1F0427DD3A9900736459 /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
+		C59E1F1227DD41CE00736459 /* DetailStormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStormView.swift; sourceTree = "<group>"; };
+		C59E1F1427DD433A00736459 /* DetailStormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +177,8 @@
 		C59E1F0F27DD3B9900736459 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C521250027C59AD5006D195C /* StormViewController.swift */,
-				C521252C27C59D7B006D195C /* StormTableView.swift */,
-				C563D04D27D13D3600225314 /* StormTableViewCell.swift */,
+				C59E1F1727DD4FCD00736459 /* StormView */,
+				C59E1F1627DD4FBF00736459 /* DetailView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,25 @@
 				C52124FE27C59AD5006D195C /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C59E1F1627DD4FBF00736459 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				C59E1F1227DD41CE00736459 /* DetailStormView.swift */,
+				C59E1F1427DD433A00736459 /* DetailStormViewController.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		C59E1F1727DD4FCD00736459 /* StormView */ = {
+			isa = PBXGroup;
+			children = (
+				C521252C27C59D7B006D195C /* StormTableView.swift */,
+				C521250027C59AD5006D195C /* StormViewController.swift */,
+				C563D04D27D13D3600225314 /* StormTableViewCell.swift */,
+			);
+			path = StormView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +363,8 @@
 				C5631DEB27D1761A0076D530 /* StormViewModel.swift in Sources */,
 				C5631DED27D177ED0076D530 /* StormViewModelProtocol.swift in Sources */,
 				C521250127C59AD5006D195C /* StormViewController.swift in Sources */,
+				C59E1F1327DD41CE00736459 /* DetailStormView.swift in Sources */,
+				C59E1F1527DD433A00736459 /* DetailStormViewController.swift in Sources */,
 				C521252D27C59D7B006D195C /* StormTableView.swift in Sources */,
 				C52124FD27C59AD5006D195C /* AppDelegate.swift in Sources */,
 				C563D04E27D13D3600225314 /* StormTableViewCell.swift in Sources */,
