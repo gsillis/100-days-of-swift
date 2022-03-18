@@ -7,16 +7,19 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class CountriesViewController: UIViewController {
 
     // Mark: - Properties
     @IBOutlet private weak var buttonOne: UIButton!
     @IBOutlet private weak var buttonTwo: UIButton!
     @IBOutlet private weak var buttonThree: UIButton!
     
+    private let controller = CountriesController()
+    
     // Mark: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        controller.createCountriesArray()
     }
 }
 
