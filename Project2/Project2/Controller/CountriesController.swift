@@ -7,9 +7,10 @@
 
 import Foundation
  
-class CountriesController {
+final class CountriesController {
     var countries = [String]()
     var score = 0
+    var answer = 0
     
     func createCountriesArray() {
         countries = [
@@ -26,5 +27,9 @@ class CountriesController {
             "uk",
             "us"
         ]
+    }
+    
+    func correctAnswer() {
+        answer = .random(in: 0...2)
     }
 }

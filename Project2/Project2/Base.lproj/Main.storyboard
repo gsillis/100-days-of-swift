@@ -16,33 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ass-84-73Y">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ass-84-73Y">
                                 <rect key="frame" x="95" y="104" width="224" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F4-0X-CbF">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F4-0X-CbF">
                                         <rect key="frame" x="0.0" y="0.0" width="224" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LdY-2v-KIu"/>
-                                            <constraint firstAttribute="height" constant="100" id="dHr-uU-aLh"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="999" constant="44" id="UIs-dC-bSD"/>
+                                            <constraint firstAttribute="height" priority="999" constant="100" id="dHr-uU-aLh"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="estonia"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="estonia" imagePadding="0.0">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmI-sI-JoN"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OC-TO-Q5C">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OC-TO-Q5C">
                                         <rect key="frame" x="0.0" y="150" width="224" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="1WU-aI-bob"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="germany"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIw-M5-ICa"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z08-eT-mhf">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z08-eT-mhf">
                                         <rect key="frame" x="0.0" y="300" width="224" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="axd-sy-GxS"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ireland" title=""/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XM-YM-3El"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -55,6 +66,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PYK-JG-ouB"/>
+                    <connections>
+                        <outlet property="buttonOne" destination="1F4-0X-CbF" id="Mp0-tP-mFB"/>
+                        <outlet property="buttonThree" destination="Z08-eT-mhf" id="gew-59-ugN"/>
+                        <outlet property="buttonTwo" destination="0OC-TO-Q5C" id="JEr-tu-f4j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

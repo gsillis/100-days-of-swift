@@ -119,12 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				C5811D7327E5211000AEEE90 /* AppDelegate */,
+				C5E9E86827E8BE9200ECBDF3 /* Controller */,
 				C5811D7427E5211600AEEE90 /* View */,
 				C592D16B27DFB6A500076248 /* Main.storyboard */,
 				C592D16E27DFB6A600076248 /* Assets.xcassets */,
 				C592D17027DFB6A600076248 /* LaunchScreen.storyboard */,
 				C592D17327DFB6A600076248 /* Info.plist */,
-				C5811D7527E5215200AEEE90 /* CountriesController.swift */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -144,6 +144,14 @@
 				C592D18827DFB6A600076248 /* Project2UITestsLaunchTests.swift */,
 			);
 			path = Project2UITests;
+			sourceTree = "<group>";
+		};
+		C5E9E86827E8BE9200ECBDF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5811D7527E5215200AEEE90 /* CountriesController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
